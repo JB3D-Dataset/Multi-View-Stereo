@@ -1,0 +1,67 @@
+# Local research and media workspaces
+/JB_3D_Dataset_Paper/
+/JB_video/
+
+# Python environments, caches, and build products
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Generated evaluation outputs
+/outputs/
+/vis.ply
+
+# Unpublished working assets
+/images/mvs_qualitative_day2.webp
+
+# Local editor, agent, and MCP configuration
+/.claude/
+/.idea
+/.vscode
+/.mcp.json
+
+# Local shell and Git configuration
+/.bash_profile
+/.bashrc
+/.gitconfig
+/.profile
+/.ripgreprc
+/.zprofile
+/.zshrc
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.log
+*.synctex.gz
+*.toc
+
+# Operating system and temporary files
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+*.swp
+*.swo
+*.tmp
+*~
