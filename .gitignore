@@ -23,7 +23,7 @@ dist/
 /vis.ply
 
 # Unpublished working assets
-/images/mvs_qualitative_day2.webp
+/docs/images/mvs_qualitative_day2.webp
 
 # Local editor, agent, and MCP configuration
 /.claude/

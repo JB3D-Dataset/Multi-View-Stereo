@@ -294,6 +294,7 @@ h3 {
 }
 
 .video-section {
+  max-width: 960px;
   padding-bottom: 34px;
 }
 

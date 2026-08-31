@@ -1,8 +1,4 @@
-# JB3D
-
-**An Aerial Video Dataset With Per-Frame Camera Poses and LiDAR Ground Truth for Multi-View Stereo and Novel View Synthesis Benchmarking**
-
-## Abstract
+# JB3D: An Aerial Video Dataset With Per-Frame Camera Poses and LiDAR Ground Truth for Multi-View Stereo and Novel View Synthesis Benchmarking
 
 Image-based 3D reconstruction from unmanned aerial vehicles is crucial for many applications like navigation, environmental monitoring, or creating digital twins. However, real-world aerial footage introduces unconstrained motion, scale variation, and dynamic elements that challenge current methods. Existing benchmarks address many of these aspects while providing valuable LiDAR ground truth, but only a few ground-based benchmarks provide video data with camera poses, often operating at lower frame rates or lower image resolutions, and most aerial benchmarks primarily offer still images only. To address this issue, we introduce JB3D: an aerial video dataset designed for benchmarking multi-view stereo and novel view synthesis approaches in realistic outdoor environments. Captured over the course of a two-day outdoor festival featuring challenging scenery, including fine structures and dynamic elements such as moving cars and people, JB3D comprises 14 UAV videos at 30 FPS, five LiDAR scans, and high-resolution RGB and thermal infrared images. To accurately reflect real-world operating conditions such as infrastructure monitoring, crowd counting, or supporting emergency response forces, all flight trajectories for video acquisition were controlled manually. All data are registered in a single ECEF/ENU coordinate frame. The novelty compared to other benchmark datasets relates to the per-frame camera poses, for which reference data are provided, too. They enable reconstruction from individual sequences, multi-sequence evaluation, and cross-day change detection. Alongside baseline results from conventional, learning-based, and advanced scene representation approaches, we release evaluation and visualization routines. In addition, we provide insights into how the strengths and weaknesses of chosen evaluation metrics affect the outcome by employing established metrics such as L1-abs, F1-score, and Chamfer distance.
 
@@ -20,7 +16,9 @@ If you use JB3D in your research, please cite:
 
 Dataset link: forthcoming
 
-<video src="images/jb3d_preview.mp4" controls title="JB3D dataset overview"></video>
+[![JB3D dataset overview video](docs/images/jb3d_preview_poster.webp)](docs/images/jb3d_preview.mp4)
+
+[Watch or download the dataset overview video (MP4, 9.6 MB)](docs/images/jb3d_preview.mp4)
 
 ## Dataset Overview
 
@@ -52,7 +50,7 @@ Across all scenes, the reconstructed point clouds are cropped using scene-specif
 
 ### Quantitative Results
 
-The complete results are also available as [machine-readable CSV](mvs_pointcloud_results.csv). Completeness is reported as a fraction, F1 as a percentage, and all distance metrics in meters. Point counts are measured after cropping and before voxel downsampling. End-to-end runtimes were measured on one NVIDIA L40 GPU.
+The complete results are also available as [machine-readable CSV](docs/mvs_pointcloud_results.csv). Completeness is reported as a fraction, F1 as a percentage, and all distance metrics in meters. Point counts are measured after cropping and before voxel downsampling. End-to-end runtimes were measured on one NVIDIA L40 GPU.
 
 <details>
 <summary><strong>Day 1 results</strong></summary>
@@ -131,7 +129,7 @@ The complete results are also available as [machine-readable CSV](mvs_pointcloud
 
 The first row shows exemplary input images. The following rows display the results from the evaluated methods rendered from the same perspective, with the absolute error color coded. The color scale ranges from 0 m to 0.5 m and above.
 
-![Qualitative MVS point cloud results for Day 1](images/mvs_qualitative_day1.webp)
+![Qualitative MVS point cloud results for Day 1](docs/images/mvs_qualitative_day1.webp)
 
 
 ## NVS and 3D Gaussian Splatting
