@@ -16,9 +16,7 @@ If you use JB3D in your research, please cite:
 
 Dataset link: forthcoming
 
-[![JB3D dataset overview video](docs/images/jb3d_preview_poster.webp)](docs/images/jb3d_preview.mp4)
-
-[Watch or download the dataset overview video (MP4, 9.6 MB)](docs/images/jb3d_preview.mp4)
+https://github.com/user-attachments/assets/20d9ccca-7406-471f-84e0-b674c9c80260
 
 ## Dataset Overview
 
