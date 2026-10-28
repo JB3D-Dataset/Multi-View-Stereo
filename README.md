@@ -26,6 +26,13 @@ https://github.com/user-attachments/assets/20d9ccca-7406-471f-84e0-b674c9c80260
 
 The 14 benchmark sequences contain 36,752 frames. Five additional georeferenced videos contain 9,687 frames and are provided as challenging sequences or additional material outside the LiDAR evaluation coverage.
 
+__We have discovered a minor error in our export script that has caused a slight deviation in position of the camera positions within the enu coordinate system. For more information and instructions on how to make these corrections, please look here:__ [Translation_correction/README.md](Translation_correction/README.md)
+
+
+
+
+
+
 ## MVS Point Cloud Benchmark
 
 The current release compares four reconstruction approaches:
